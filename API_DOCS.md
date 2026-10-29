@@ -49,14 +49,14 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIs...
 **Example — search contacts:**
 ```http
 GET /api/contacts?q=acme&page=1&page_size=20
-Authorization: Bearer {token}
+Authorization: Bearer <your-token>
 ```
 
 **Example — create a contact:**
 ```http
 POST /api/contacts
 Content-Type: application/json
-Authorization: Bearer {token}
+Authorization: Bearer <your-token>
 
 {
   "name": "John Smith",
@@ -89,7 +89,7 @@ Authorization: Bearer {token}
 **Example — list your pipeline:**
 ```http
 GET /api/deals?stage=follow_up
-Authorization: Bearer {token}
+Authorization: Bearer <your-token>
 ```
 
 ### Tasks (任务)
@@ -122,14 +122,14 @@ Authorization: Bearer {token}
 ### AI Suggestions
 ```http
 GET /api/ai/suggestions
-Authorization: Bearer {token}
+Authorization: Bearer <your-token>
 ```
 
 ### AI Chat (agent)
 ```http
 POST /api/agent-chat/{agent_id}/message
 Content-Type: application/json
-Authorization: Bearer {token}
+Authorization: Bearer <your-token>
 
 {"content": "帮我总结这个客户最近的沟通"}
 ```
@@ -149,7 +149,7 @@ Authorization: Bearer {token}
 ```http
 POST /api/knowledge/search
 Content-Type: application/json
-Authorization: Bearer {token}
+Authorization: Bearer <your-token>
 
 {"query": "产品规格参数", "top_k": 5}
 ```
