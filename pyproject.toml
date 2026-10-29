@@ -1,0 +1,15 @@
+[project]
+name = "silimind-mcp"
+version = "0.1.0"
+description = "Connect Claude/ChatGPT/Cursor to your SiliMind CRM via MCP"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+silimind-mcp = "silimind_mcp.server:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
